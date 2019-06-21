@@ -1,12 +1,15 @@
-input("名前を入力してください＞＞")
+import random
+
+name = input("名前を入力してください＞＞")
 num = int(random.random()*10)
+
 if(num==0):
-    print("大吉")
+    print("{}さんの運勢は大吉です".format(name))
 elif(num>=1 and num<=5):
-    print("中吉")
+    print("{}さんの運勢は中吉です".format(name))
 elif(num>=6 and num<=8):
-    print("小吉")
+    print("{}さんの運勢は小吉です".format(name))
 elif(num==9):
-    print("凶")
+    print("{}さんの運勢は凶です".format(name))
 elif(num==10):
-    print("大凶")
+    print("{}さんの運勢は大凶です".format(name))
